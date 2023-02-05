@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+
+                <form class="login" method="post" name="form" onsubmit="validated()">
+                    <div class="login_field">
+                        <i class="login__icon fa-solid fa-user"></i>
+                        <input type="text" id="email" autocomplete="off" name="email" class="login_input"
+                            placeholder="Email">
+                        <div id="email_error">please fill your email</div>
+
+                    </div>
+                    <div class="login_field">
+                        <i class="login__icon fa-solid fa-lock"></i>
+                        <input type="password" id="password" name="password" class="login_input" placeholder="password">
+                        <div id="pass_error">please fill your password</div>
+                    </div>
+                    <a href="home.html">
+                        <button type="submit" class="button login_submit" onclick="myFunction()">
+                            <span class="button__text">Log In Now</span>
+                            <!-- <i class="button__icon fa-solid fa-chevrons-right"></i> -->
+                        </button>
+                    </a>
+                </form>
+                <div class="social-login">
+                    <h3>Log in via</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-login__icon fa-brands fa-twitter"></a>
+                        <a href="#" class="social-login__icon fa-brands fa-facebook"></a>
+                        <a href="#" class="social-login__icon fa-brands fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+
+            </div>
+        </div>
+    </div>
+    <script src="App.js"></script>
+
+</body>
+
+</html>
