@@ -1,7 +1,7 @@
 var email = document.forms['form']['Username'];
 var password = document.forms['form']['password'];
 
-var username_error = document.getElementById('useername_error');
+var username_error = document.getElementById('username_error');
 var pass_error = document.getElementById('pass_error');
 
 email.addEventListener('input', username_verify);
