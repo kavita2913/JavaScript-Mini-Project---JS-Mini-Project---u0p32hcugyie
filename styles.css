@@ -78,7 +78,7 @@ body{
     padding: 30px;
     padding-top: 156px;
 }
-.login #email_error,
+.login #username_error,
 .login #pass_error{
     margin-top:5px ;
     width: 230px;
