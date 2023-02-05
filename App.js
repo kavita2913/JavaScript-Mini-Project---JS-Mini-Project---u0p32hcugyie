@@ -1,10 +1,10 @@
-var email = document.forms['form']['email'];
+var email = document.forms['form']['Username'];
 var password = document.forms['form']['password'];
 
-var email_error = document.getElementById('email_error');
+var username_error = document.getElementById('useername_error');
 var pass_error = document.getElementById('pass_error');
 
-email.addEventListener('input', email_verify);
+email.addEventListener('input', username_verify);
 password.addEventListener('input', pass_verify);
 
 document.forms["form"].addEventListener("submit", function (event) {
@@ -15,10 +15,10 @@ document.forms["form"].addEventListener("submit", function (event) {
 });
 
 function validated() {
-    if (email.value.length < 9) {
-        email.style.border = "1px solid red";
-        email_error.style.display = "block";
-        email.focus();
+    if (username.value.length < 9) {
+        username.style.border = "1px solid red";
+        username_error.style.display = "block";
+        username.focus();
         return false;
     }
 
@@ -31,10 +31,10 @@ function validated() {
     return true;
 }
 
-function email_verify() {
-    if (email.value.length >= 5) {
-        email.style.border = "1px solid silver";
-        email_error.style.display = "none";
+function username_verify() {
+    if (username.value.length >= 5) {
+        username.style.border = "1px solid silver";
+        username_error.style.display = "none";
     }
 }
 function pass_verify() {
